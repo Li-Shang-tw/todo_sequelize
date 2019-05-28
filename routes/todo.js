@@ -11,10 +11,7 @@ const User = db.User
 const { authenticated } = require('../config/auth')
 
 // 設定 /todos 路由
-// 列出全部 Todo
-router.get('/', authenticated, (req, res) => {
-  res.send('列出全部 Todo')
-})
+
 
 // 新增一筆 Todo 頁面
 router.get('/new', authenticated, (req, res) => {
